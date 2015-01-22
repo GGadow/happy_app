@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :jokes
 
-  resources :home_pages 
+  resources :home_pages
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

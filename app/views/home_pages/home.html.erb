@@ -1,4 +1,5 @@
-<%= button_to "Pearl of Wisdom", root_path %>
-<%= button_to "Click for a Funny", root_path %>
+<p id="notice"><%= notice %></p>
 
-<p><%= render 'layouts/display', this_table: @table %></p>
+<%= button_to "Pearl of Wisdom", home_pages_path, params: {table: :quotes} %>
+<%= button_to "Click for a Funny", home_pages_path, params: {table: :jokes}  %>
+
