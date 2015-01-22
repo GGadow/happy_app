@@ -17,7 +17,8 @@ class HomePagesController < ApplicationController
       elsif params[:table] == "jokes"
         o = Joke.offset(rand(Joke.count)).first
       end
-      format.html { redirect_to root_path, notice: "#{o.part1} #{o.part2}" }
+      outp = "#{o.part1}  #{o.part2}"
+      format.html { redirect_to root_path, notice: outp }
     end 
   end
 

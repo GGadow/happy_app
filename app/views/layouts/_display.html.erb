@@ -1,3 +1,4 @@
-<% if !this_table.nil? %>
-  <%= this_table.offset(rand(this_table.count)).first.part1 %>
-<% end if %>
+<%= button_to "Pearl of Wisdom", home_pages_path, params: {table: :quotes} %>
+<%= button_to "Click for a Funny", home_pages_path, params: {table: :jokes}  %>
+
+
